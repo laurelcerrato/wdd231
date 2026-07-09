@@ -14,7 +14,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Intel+One+Mono:ital,wght@0,300..700;1,300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Share+Tech&family=Space+Grotesk:wght@300..700&display=swap"
         rel="stylesheet">
-</head>
+<script src="scripts/home.js" defer></script>
+    </head>
 <body>
     <header>
         <img src="images/house-blank.svg" alt="Site Logo" width="512" height="512">
@@ -30,10 +31,39 @@
     </header>
     <main>
         <h1>Home</h1>
-        <section></section>
+        <section class="about-me">
+            <h2>About Me</h2>
+            <p>My name is Laurel Xiomara Cerrato Ramírez, I am 21 years old, I am from Honduras, San Pedro Sula. I am currently studying at the University of Houston-Downtown. I am pursuing a degree in Computer Science with a concentration in Web Development. I have a passion for technology and I am always looking to learn new things. In my free time, I enjoy playing video games, watching movies, and spending time with my friends and family.</p>
+        </section>
+        <section class="photo">
+            <h2>Student Photo</h2>
+            <img src="images/profile.webp" alt="Profile Picture" width="300" height="300">
+        </section>
+        <section class="courses">
+            <h2>Web Certificate Courses</h2>
+            <button id="all-courses">Show All Courses</button>
+            <button id="WDD-courses">Show WDD Courses</button>
+            <button id="CSE-courses">Show CSE Courses</button>
+            <p>The total number of credits for the selected courses is: <span id="total-credits"></span></p>
+            <div id="course-list">
+                <!-- Course list will be populated by JavaScript -->
+            </div>
+        </section>
     </main>
-    <footer></footer>
-    <script src="scripts/home.js"></script>
-    
+    <footer>
+        <div class= "social">
+            <a href="https://github.com/laurelcerrato" target="_blank">
+                <img src="images/github.svg" alt="Github Profile" width="16" height="16">
+            </a>
+            <a href="https://www.linkedin.com/in/laurelc/" target="_blank">
+                <img src="images/linkedin.svg" alt="LinkedIn Profile" width="16" height="16">
+            </a>
+            <a href="https://www.youtube.com/@laurelcerrato4167" target="_blank">
+                <img src="images/youtube.svg" alt="YouTube Profile" width="16" height="16">
+            </a>
+        </div>
+        <p>&copy;<span id="currentyear"></span>🌺Laurel Xiomara Cerrato Ramírez, Honduras, San Pedro Sula🌺</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
 </body>
 </html>

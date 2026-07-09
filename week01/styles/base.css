@@ -5,7 +5,7 @@
 header{
     display: grid;
     grid-template-columns: 24px auto 44px;
-    padding: 5px 0 5px 5px;
+    padding: 5px 0 0px 5px;
     border-bottom: 1px solid #ccc;
     column-gap: 8px;
     align-items: end;
@@ -15,12 +15,14 @@ header img{
     display: block;
     width: 100%;
     height: auto;
+    padding-bottom: 5px;
 
 
     
 }
 header span {
     font-size:1.2rem;
+    padding-bottom: 5px;
 }
 /** hamburger**/
 .hamburger{
@@ -42,9 +44,12 @@ header span {
     display: none;
 }
 .navigation.show{
+    grid-column: 1 / -1;
     display: block;
-    width: 100vh;
+
+    
     column-gap: 0;
+    
 
 }
 .navigation ul{
@@ -59,9 +64,10 @@ header span {
 .navigation a{
     display: block;
     padding: .8rem 10px;
-    color:darkgreen;
+    color: #4C2C72;
     text-decoration: none;
     border-bottom: solid 1px #ccc;
+   
 
 }
 .navigation li.current{
@@ -70,3 +76,82 @@ header span {
 .navigation a:hover {
     background-color: #dddddd;
 }
+/** footer*/
+
+footer{
+    background-color: #ccc;
+    padding: 1rem 10px;
+    align-items: center;
+    text-align: center;
+}
+.social{
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+
+}
+.social a{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 22px;
+}
+.social img{
+    width: 22px;
+    height: 22px;
+}
+
+.social a:hover{
+    background-color: #ddd;
+}
+main{
+    padding: 1rem 10px;
+}
+main section{
+    text-align: center;
+    background-color: #ccc;
+    box-shadow: rgba(52, 52, 154, 0.2) 0px 7px 29px 0px;
+
+
+}
+h2{
+    background-color: #4C2C72;
+    color: white;
+    padding: 10px;
+   
+}
+section p{
+    padding: 10px;
+}
+section img{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+}
+.courses button{
+    background-color: 77867F;
+    color:black;
+    border: none;
+    padding: 10px;
+    border-radius: 22px;
+    cursor: pointer;
+    
+}
+.courses button:hover{
+    background-color: #4C2C72;
+    color: white;
+}
+.course-card{
+    background-color: #8a65b6;
+    color: white;
+}
+.course-card h3::before{
+    content: "\2713";
+    padding-right: 5px;
+}
+#course-list h3 {
+    padding: 5px;
+}
+
