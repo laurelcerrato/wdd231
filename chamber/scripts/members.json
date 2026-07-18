@@ -1,0 +1,76 @@
+{
+    "companies" : [
+        {
+            "name" : "LACER",
+            "address" : "San Pedro Sula Honduras",
+            "number" : "2398289732",
+            "email" : "lacer@gmail.com",
+            "img" : "./images/lacer.png",
+            "status" : "Gold"
+        },
+        {
+            "name" : "ZAFE",
+            "address" : "San Pedro Sula Honduras",
+            "number" : "232422323",
+            "email" : "zafe@gmail.com",
+            "img" : "./images/zmen.png",
+            "status" : "Silver"
+        },
+        {
+            "name" : "SOLAR",
+            "address" : "San Pedro Sula Honduras",
+            "number" : "546546456",
+            "email" : "solar@gmail.com",
+            "img" : "./images/solar.png",
+            "status" : "Bronze"
+        },
+        {
+            "name" : "TELEPACIFICO",
+            "address" : "San Pedro Sula Honduras",
+            "number" : "12324342",
+            "email" : "tele@gmail.com",
+            "img" : "./images/tele.png",
+            "status" : "Gold"
+        },
+        {
+            "name" : "NET",
+            "address" : "San Pedro Sula Honduras",
+            "number" : "28287781",
+            "email" : "net@gmail.com",
+            "img" : "./images/net.png",
+            "status" : "Silver"
+        },
+        {
+            "name" : "SEBRAE",
+            "address" : "San Pedro Sula Honduras",
+            "number" : "564545353",
+            "email" : "sebrae@gmail.com",
+            "img" : "./images/sebrae.png",
+            "status" : "Bronze"
+        },
+        {
+            "name" : "GOAT",
+            "address" : "San Pedro Sula Honduras",
+            "number" : "897687667",
+            "email" : "goat@gmail.com",
+            "img" : "./images/magic.png",
+            "status" : "Silver"
+        },
+        {
+            "name" : "WATCH US GROW",
+            "address" : "San Pedro Sula Honduras",
+            "number" : "453434353",
+            "email" : "grow@gmail.com",
+            "img" : "./images/grow.png",
+            "status" : "Gold"
+        },
+        {
+            "name" : "CINEMA",
+            "address" : "San Pedro Sula Honduras",
+            "number" : "67656454",
+            "email" : "cinemar@gmail.com",
+            "img" : "./images/cinema.png",
+            "status" : "Bronze"
+        }
+    ]
+}

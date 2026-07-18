@@ -1,0 +1,23 @@
+{
+   "family" : "Cerrato",
+   "date": "12/09/2004",
+   "number_of_memebers": 3,
+   "visited": true,
+   "individuals":[
+    {
+        "name":"Laurel",
+        "gender": "F",
+        "birthdate": "12/09/2004"
+    },
+    {
+        "name":"Xiomara",
+        "gender": "F",
+        "birthdate": "12/02/1966"
+    },
+    {
+        "name":"Lawrence",
+        "gender": "M",
+        "birthdate": "04/10/1965"
+    }
+   ]
+}
