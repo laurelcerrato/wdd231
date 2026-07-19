@@ -1,4 +1,4 @@
-const url = 'scripts/members.json';
+const url = 'data/members.json';
 
 async function getCompaniesData() {
     const response = await fetch(url);

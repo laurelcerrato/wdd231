@@ -6,7 +6,7 @@
 
 body {
     margin: 0;
-    font-family: "Comfortaa", "sans-serif";
+    font-family: "Intel One Mono",monospace;;
     background-color: azure;
 }
 
@@ -97,12 +97,7 @@ nav ul {
     padding: 0 24px;
 }
 
-#primaryNav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 60px;
-}
+
 
 .nav-link {
     transition: 0.3s ease;
@@ -130,6 +125,10 @@ nav ul {
 }
 
 #primaryNav {
+    display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 60px;
     position: fixed;
     left: -100%;
     top: 20%;
