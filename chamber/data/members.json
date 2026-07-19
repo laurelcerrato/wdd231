@@ -4,6 +4,7 @@
             "name" : "LACER",
             "address" : "San Pedro Sula Honduras",
             "number" : "2398289732",
+            "website": "lacer.com",
             "email" : "lacer@gmail.com",
             "img" : "./images/lacer.png",
             "status" : "Gold"
@@ -12,6 +13,7 @@
             "name" : "ZAFE",
             "address" : "San Pedro Sula Honduras",
             "number" : "232422323",
+            "website": "zafe.com",
             "email" : "zafe@gmail.com",
             "img" : "./images/zmen.png",
             "status" : "Silver"
@@ -20,6 +22,7 @@
             "name" : "SOLAR",
             "address" : "San Pedro Sula Honduras",
             "number" : "546546456",
+             "website": "solar.com",
             "email" : "solar@gmail.com",
             "img" : "./images/solar.png",
             "status" : "Bronze"
@@ -28,6 +31,7 @@
             "name" : "TELEPACIFICO",
             "address" : "San Pedro Sula Honduras",
             "number" : "12324342",
+             "website": "tele.com",
             "email" : "tele@gmail.com",
             "img" : "./images/tele.png",
             "status" : "Gold"
@@ -36,6 +40,7 @@
             "name" : "NET",
             "address" : "San Pedro Sula Honduras",
             "number" : "28287781",
+             "website": "net.com",
             "email" : "net@gmail.com",
             "img" : "./images/net.png",
             "status" : "Silver"
@@ -44,6 +49,7 @@
             "name" : "SEBRAE",
             "address" : "San Pedro Sula Honduras",
             "number" : "564545353",
+             "website": "sebrae.com",
             "email" : "sebrae@gmail.com",
             "img" : "./images/sebrae.png",
             "status" : "Bronze"
@@ -52,6 +58,7 @@
             "name" : "GOAT",
             "address" : "San Pedro Sula Honduras",
             "number" : "897687667",
+             "website": "goat.com",
             "email" : "goat@gmail.com",
             "img" : "./images/magic.png",
             "status" : "Silver"
@@ -60,6 +67,7 @@
             "name" : "WATCH US GROW",
             "address" : "San Pedro Sula Honduras",
             "number" : "453434353",
+             "website": "watch.com",
             "email" : "grow@gmail.com",
             "img" : "./images/grow.png",
             "status" : "Gold"
@@ -68,6 +76,7 @@
             "name" : "CINEMA",
             "address" : "San Pedro Sula Honduras",
             "number" : "67656454",
+             "website": "cinema.com",
             "email" : "cinemar@gmail.com",
             "img" : "./images/cinema.png",
             "status" : "Bronze"

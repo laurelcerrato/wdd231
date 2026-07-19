@@ -16,13 +16,16 @@ const displayCompanies = (data) => {
     let h2 = document.createElement('h2');
     let address = document.createElement('p');
     let number = document.createElement('p');
-    let email = document.createElement('p');
+        let email = document.createElement('p');
+        let website = document.createElement('a');
     let logo = document.createElement('img');
       // Build the h2 content out to show the prophet's full name - finish the template string
     h2.textContent = `${company.name}`;
     address.textContent = `Address: ${company.address}`;
     number.textContent = `Phone Number: ${company.number}`;   
     email.textContent = `Email: ${company.email}`; 
+    website.textContent = company.website;
+    website.setAttribute('src',company.website);
 
       // Build the image portrait by setting all the relevant attribute
     logo.setAttribute('src', company.img);
@@ -37,6 +40,7 @@ const displayCompanies = (data) => {
     card.appendChild(address);
     card.appendChild(number);
     card.appendChild(email);
+    card.appendChild(website);
     cards.appendChild(card);
     } )// end of forEach loop
   } // end of function expression
