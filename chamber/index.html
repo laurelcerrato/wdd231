@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is the Directory page of the Sula Valley Chamber of commerce.">
+    <meta name="author" content="Laurel Cerrato">
+    <link rel="Icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Intel+One+Mono:ital,wght@0,300..700;1,300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Share+Tech&family=Space+Grotesk:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <meta property="og:title" content="Directory Page">
+    <meta property="og:description" content="This website shows the home page  from Sula Valley Chamber">
+    <meta property="og:image" content="https://laurelcerrato.github.io/wdd231/images/sanpedro.jpg">
+    <meta property="og:url" content="https://laurelcerrato.github.io/wdd231/directory.html">
+    <!-- <<script src="scripts/directory.js" defer></script> -->
+    <script src="scripts/home.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
+    <script src="scripts/windchill.js" defer></script>
+    <title>Sula Valley Home Web Site</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logoholder">
+                <img class="logo" src="images/sulavalleylogo.webp" alt="Logo">
+            </a>
+            <section class="headings">
+                <h2 class="title">Sula Valley Chamber</h2>
+            </section>
+            <button id="ham-btn" class="hamburger" aria-label="Open navigation menu"></button>
+            <ul id="primaryNav">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="discover.html" class="nav-link">Discover</a></li>
+                <li class="nav-item"><a href="directory.html" class="nav-link">Directory</a></li>
+                <li class="nav-item"><a href="join.html" class="nav-link">Join</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="home-main">
+        <div class="hero">
+            <h2>Welcome to Sula Valley</h2>
+            <picture>
+                <source srcset="images/mediumtown.jpg" media="(min-width:500px) and (max-width: 799px)">
+                <source srcset="images/largetown.webp" media="(min-width:800px)">
+                <img src="images/smalltown.jpg" alt="Hero Image">
+            </picture>
+            <!-- <img src="images/wdd230-orglarge.jpg" alt="San Pedro Sula Honduras"> -->
+            <a href="join.html">
+                <h3>Join the Chamber!</h3>
+            </a>
+        </div>
+        <div class="event">
+            <h2>Ribbon Cutting</h2>
+            <h3>💼 Chamber's Office</h3>
+            <p>Join us for the grand opening of the Chamber's office, Thursday at 1:00pm. Refreshments and lunch will be
+                served after the ceremony. Thank you for you contributions to our success.</p>
+        </div>
+        <div class="weather">
+            <h2>Weather</h2>
+            <section>
+                <img id="weather-icon" src="" alt="">
+                <h3><span class="temperature"></span></h3>
+                <p class="weather-description"></p>
+            </section>
+            <hr>
+            <p>
+                Wind Speed: <span class="wind-speed"></span> M/s <br>
+            <p>
+                Humidity: <span class="humidity"></span>%
+            </p>
+            <p>
+                Wind Chill: <span class="wind-chill"></span>
+            </p>
+            <p>
+                Weather Information from : <a href="https://openweathermap.org/">OpenWeatherMap</a>
+            </p>
+        </div>
+        <div class="new">
+            <h2>Classes in Valle de Sula will be 70% face to face</h2>
+            <p>The director of the National Autonomous University of Honduras in Valle de Sula (UNAH-VS), Jacobo Paredes,
+                announced that 70 percent of classes will begin on-site, on January 23, in this regional university center.
+    
+                "We have been working on the face-to-face part in the area of medicine and some engineering courses last
+                year, and at the end of the year the Higher Education Council authorized the universities to return to
+                face-to-face classes and we hope that this first academic period will have a higher degree of face-to-face
+                classes," he explained.
+    
+                The authorities expect that approximately 12,000 to 15,000 students will attend in person during this first
+                academic period, maintaining biosecurity measures.
+    
+            </p>
+        </div>
+        <div class="join">
+            <a href="join.html">
+                <h2>Join us!</h2>
+            </a>
+            <p>Discover how to join the chamber and how it will benefit your organization</p>
+    
+        </div>
+        <div class="spotlight">
+            <div class="spotlight1"></div>
+            <div class="spotlight2"></div>
+            <div class="spotlight3"></div>
+            <div class="spotlight4"></div>
+        </div>
+    </main>
+    <footer>
+        <p class="footername"><b> Sula Valley Chamber of commerce</b></p>
+        <div class="contactinfo">
+            <p>info@sullavalley.gmail.com</p>
+            <p> +504 8127812718</p>
+            <a href="https://www.google.com/maps/@15.4599222,-88.0723241,11z" target="_blank">📍 Location Map</a>
+        </div>
+        <hr>
+        <p class="myinfo"><b>&copy;<span class="year"></span> | Laurel Cerrato | WDD 231 Project | Honduras </b></p>
+        <p class="update"><b>Last Updated: <span id="date"></span> </b></p>
+    </footer>
+
+</body>
+
+</html>
