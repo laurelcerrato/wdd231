@@ -4,8 +4,9 @@ const captionDesc = document.querySelector('figcaption');
 const mylat = "49.750042270512154";
 const mylong = "6.637199289892592";
 const myApi = "45de18d04b727c7223d9fb5e769cd624";
+const days = 3;
 
-const url = `https://api.openweathermap.org/data/2.5/weather?lat=${mylat}&lon=${mylong}&appid=${myApi}`;
+const url = `https://api.openweathermap.org/data/2.5/weather?lat=${mylat}&lon=${mylong}&cnt=${days}&appid=${myApi}`;
 
 async function apiFetch() {
     try { 

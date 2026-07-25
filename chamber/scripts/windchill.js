@@ -17,15 +17,23 @@ const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('.weather-description');
 const humidity = document.querySelector('.humidity');
 
+const days = 3;
 const url = `http://api.openweathermap.org/data/2.5/weather?lat=15.50417&lon=-88.025&units=metric&appid=45de18d04b727c7223d9fb5e769cd624`;
+const forecastUrl =
+`https://api.openweathermap.org/data/2.5/forecast?lat=15.50417&lon=-88.025&cnt=24&units=metric&appid=45de18d04b727c7223d9fb5e769cd624`;
 
 
 async function apiFetch() {
     try {
-    const response = await fetch(url);
-    if (response.ok) {
+        const response = await fetch(url);
+        const forecastResponse = await fetch(forecastUrl);
+    if (response.ok && forecastResponse.ok)  {
         const data = await response.json();
+        const forecastData = await forecastResponse.json();
         displayResults(data);
+        displayForecast(forecastData);
+        console.log(data);
+        console.log(forecastData);
 
     } else {
         throw Error(await response.text());
@@ -45,4 +53,30 @@ function displayResults(weatherData) {
     captionDesc.textContent = desc.charAt(0).toUpperCase() + desc.slice(1);
     speed.innerHTML = weatherData.wind.speed;
     humidity.innerHTML =weatherData.main.humidity;
+}
+
+function displayForecast(forecastData) {
+    const forecast = [
+        forecastData.list[0],
+        forecastData.list[8],
+        forecastData.list[16]
+    ];
+    forecast.forEach(day => {
+        const forecastSection = document.querySelector(".forecast");
+        const forecastTemp = document.createElement("p");
+        const forecastDescription = document.createElement("p");
+        const forecastDay = document.createElement("h3");
+        const date = new Date(day.dt_txt);
+        const dayName = date.toLocaleDateString("en-US", {
+            weekday: "long"
+        });
+        forecastDay.innerHTML = `Day: ${dayName}`;
+        forecastTemp.innerHTML = `Temperature: ${day.main.temp}`;
+        forecastDescription.innerHTML = `Description: ${day.weather[0].description}`;
+        forecastSection.appendChild(forecastDay);
+        forecastSection.appendChild(forecastTemp);
+         forecastSection.appendChild(forecastDescription);
+    });
+    
+   
 }

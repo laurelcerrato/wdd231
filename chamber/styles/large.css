@@ -70,7 +70,8 @@
         width: 80%;
     }
 
-    .home-main {
+    .home{
+        display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: auto auto auto;
         margin-left: 5%;
@@ -102,11 +103,6 @@
         grid-row: 1/5;
         display: flex;
         flex-direction: column;
-
-
-        /* grid-row: 1/4;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr; */
     }
 
     .spotlight3,

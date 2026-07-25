@@ -270,6 +270,10 @@ nav ul li a {
 .weather hr {
     width: 100%;
 }
+.weather .forecast{
+    display: flex;
+    flex-direction: column;
+}
 
 .event,
 .new {
