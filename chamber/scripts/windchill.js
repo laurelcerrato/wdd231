@@ -18,7 +18,7 @@ const captionDesc = document.querySelector('.weather-description');
 const humidity = document.querySelector('.humidity');
 
 const days = 3;
-const url = `http://api.openweathermap.org/data/2.5/weather?lat=15.50417&lon=-88.025&units=metric&appid=45de18d04b727c7223d9fb5e769cd624`;
+const url = `https://api.openweathermap.org/data/2.5/weather?lat=15.50417&lon=-88.025&units=metric&appid=45de18d04b727c7223d9fb5e769cd624`;
 const forecastUrl =
 `https://api.openweathermap.org/data/2.5/forecast?lat=15.50417&lon=-88.025&cnt=24&units=metric&appid=45de18d04b727c7223d9fb5e769cd624`;
 
