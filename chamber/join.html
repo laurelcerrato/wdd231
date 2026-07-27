@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is the Home page of the Sula Valley Chamber of commerce.">
+    <meta name="description" content="This is the Join page of the Sula Valley Chamber of commerce.">
     <meta name="author" content="Laurel Cerrato">
     <link rel="Icon" href="images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,14 +17,12 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
     <meta property="og:title" content="Directory Page">
-    <meta property="og:description" content="This website shows the home page from Sula Valley Chamber">
+    <meta property="og:description" content="This website shows the Join page from Sula Valley Chamber">
     <meta property="og:image" content="https://laurelcerrato.github.io/wdd231/images/sanpedro.jpg">
     <meta property="og:url" content="https://laurelcerrato.github.io/wdd231/directory.html">
     <!-- <<script src="scripts/directory.js" defer></script> -->
     <script src="scripts/home.js" defer></script>
     <script src="scripts/join.js" defer></script>
-    
-    
     <title>Sula Valley Join Web Site</title>
 </head>
 
@@ -37,7 +35,7 @@
             <section class="headings">
                 <h2 class="title">Sula Valley Chamber</h2>
             </section>
-            <button id="ham-btn" class="hamburger" aria-label="Open navigation menu">&#9776</button>
+            <button id="ham-btn" class="hamburger" aria-label="Open navigation menu">&#9776;</button>
             <ul id="primaryNav">
                 <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
                 <li class="nav-item"><a href="discover.html" class="nav-link">Discover</a></li>
@@ -53,13 +51,13 @@
             <form method="get" action="thankyou.html">
                 <fieldset>
                     <legend>Your Information</legend>
-                    <label class="top">First Name* <input type="text" name="fname" required></label>
-                    <label class="top">Last Name* <input type="text" name="lname" required></label>
-                    <label class="top">Position Title <input type="text" name="position" pattern="[A-Za-z\-\s]{7,}"
+                    <label class="top">First Name* <input type="text" name="fname" autocomplete="given-name"></label>
+                    <label class="top">Last Name* <input type="text" name="lname" autocomplete="family-name" required></label>
+                    <label class="top">Position Title <input type="text" name="position" autocomplete="organization-title" pattern ="[A-Za-z\-\s]{7,}"
                             title="Only accepts alpha characters, hyphens, and spaces with a minimum of seven characters"></label>
-                    <label class="top">Email* <input type="email" name="email" placeholder="youremail@gmail.com"></label>
-                    <label class="top">Phone <input type="tel" name="phone" required></label>
-                    <label class="top">Business Name* <input type="text" name="businessname" required></label>
+                    <label class="top">Email* <input type="email" name="email" placeholder="youremail@gmail.com" title="email" autocomplete="email" required></label>
+                    <label class="top">Phone <input type="tel" name="phone" title="phone" autocomplete="tel" required></label>
+                    <label class="top">Business Name* <input type="text" name="businessname" autocomplete="organization" required></label>
                 </fieldset>
                 <fieldset>
                     <legend>Membership Level</legend>
@@ -72,10 +70,10 @@
                 <fieldset>
                     <legend>Business description</legend>
                     <label class="top">
-                        <textarea id="description" name="description" rows="7" cols="40"></textarea>
+                        <textarea id="description" name="description" rows="7" cols="40" title="Organization description"></textarea>
                     </label>
                 </fieldset>
-                <input type="time" name="dateandtime" hidden>
+                <input type="time" name="dateandtime" id="dateandtime" hidden>
                 <input type="submit" value="Join the Chamber" class="submitBtn">
             </form>
         </div>
