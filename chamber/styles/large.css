@@ -153,14 +153,7 @@
     .gmembership {
         display: block;
         grid-column: 2/3;
-        margin-left: 20%;
-        margin-right: 20%;
-        color: #FFECD1;
-        background-color: #001524;
-        text-align: center;
-        padding: 20px;
-        margin-top: 20px;
-        border-radius: 20px;
+        
     }
 
     /* .nmembership, .bmembership, .smembership, .gmembership */
