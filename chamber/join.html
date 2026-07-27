@@ -51,13 +51,13 @@
             <form method="get" action="thankyou.html">
                 <fieldset>
                     <legend>Your Information</legend>
-                    <label class="top">First Name* <input type="text" name="fname" autocomplete="given-name"></label>
-                    <label class="top">Last Name* <input type="text" name="lname" autocomplete="family-name" required></label>
-                    <label class="top">Position Title <input type="text" name="position" autocomplete="organization-title" pattern ="[A-Za-z\-\s]{7,}"
+                    <label class="top">First Name* <input type="text" name="fname" autocomplete="given-name" required title="fname"></label>
+                    <label class="top">Last Name* <input type="text" name="lname" autocomplete="family-name" required title="lname"></label>
+                    <label class="top">Position Title <input type="text" name="position" autocomplete="organization-title"  pattern ="[A-Za-z\-\s]{7,}"
                             title="Only accepts alpha characters, hyphens, and spaces with a minimum of seven characters"></label>
                     <label class="top">Email* <input type="email" name="email" placeholder="youremail@gmail.com" title="email" autocomplete="email" required></label>
                     <label class="top">Phone <input type="tel" name="phone" title="phone" autocomplete="tel" required></label>
-                    <label class="top">Business Name* <input type="text" name="businessname" autocomplete="organization" required></label>
+                    <label class="top">Business Name* <input type="text" name="businessname" autocomplete="organization" title="businessname" required></label>
                 </fieldset>
                 <fieldset>
                     <legend>Membership Level</legend>
@@ -73,7 +73,7 @@
                         <textarea id="description" name="description" rows="7" cols="40" title="Organization description"></textarea>
                     </label>
                 </fieldset>
-                <input type="time" name="dateandtime" id="dateandtime" hidden>
+                <label><input type="time" name="dateandtime" id="dateandtime" hidden></label>
                 <input type="submit" value="Join the Chamber" class="submitBtn">
             </form>
         </div>

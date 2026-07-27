@@ -113,7 +113,6 @@ nav ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 60px;
     position: fixed;
     left: -100%;
     top: 20%;
