@@ -144,6 +144,7 @@
 
     .join-form {
         grid-column: 1/2;
+        margin-left: 100px;
     }
 
     .nmembership,
