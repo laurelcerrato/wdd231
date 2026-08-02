@@ -5,13 +5,13 @@ document.getElementById("date").textContent = document.lastModified
 
 
 //nav js
-const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector("#primaryNav");
-hamburger.addEventListener("click", () => {
-    hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
-
+const navbutton = document.querySelector("#ham-btn");
+navbutton.addEventListener("click", () => {
+    navbutton.classList.toggle("show");
+    navbar.classList.toggle("show");
 });
+
+const navbar = document.querySelector("#nav-bar");
 
 
 

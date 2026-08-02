@@ -17,20 +17,96 @@ main {
 }
 
 header {
+    display: grid;
+    grid-template-columns: auto auto 44px;
+    padding:  0 0px 5px;
+    border-bottom: .5px solid #ccc;
+    column-gap: 8px;
+    align-items:center;
     background-color: #FFECD1;
-    padding: 5px 0;
-    display: flex;
-    align-items: center;
     justify-content: space-around;
-    margin: 0 auto;
 }
 
-.logo {
-    width: 50%;
+header img{
+    display: block;
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+.title {
+    font-size: 1.5rem;
+    padding-bottom: 5px;
+}
+
+/** hamburger**/
+.hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.show::before {
+    content: "\00D7";
 
 }
 
-.headings {
+/** navbar**/
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    grid-column: 1 / -1;
+    display: block;
+    column-gap: 0;
+
+
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #FF7D00;
+
+}
+
+
+.navigation a {
+    display: block;
+    padding: 1rem 10px;
+    color: #001524;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: solid .5px #ccc;
+}
+
+
+
+.navigation li:hover {
+    background-color: #FFECD1;
+    
+}
+
+
+/* header {
+    background-color: #FFECD1;
+     
+    } */
+
+/* .logo {
+    /* width: 50%;} */
+    
+
+
+
+/* .headings {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -39,15 +115,13 @@ header {
 .headings h1 {
     font-size: 1rem;
     text-align: center;
-}
+} */
 
 
 
-.title {
-    display: flex;
-    margin-left: .5rem;
-    align-self: center;
-}
+/* .title {
+     display: flex;
+} */
 
 
 
@@ -63,7 +137,7 @@ header {
     display: none;
 }
 
-nav ul {
+/* nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -148,7 +222,7 @@ nav ul li a {
     padding: .8rem 2vw;
     text-decoration: none;
     color: #FFECD1;
-}
+} */
 
 
 .event,
@@ -215,7 +289,7 @@ nav ul li a {
 
 .hero h2 {
     position: absolute;
-color: #010405;
+    color: #010405;
     left: 25%;
     right: 25%;
     width: 50%;
