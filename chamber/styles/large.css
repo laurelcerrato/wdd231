@@ -155,6 +155,12 @@
         grid-column: 2/3;
         
     }
+    #discover-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+
 
     /* .nmembership, .bmembership, .smembership, .gmembership */
 }

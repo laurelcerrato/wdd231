@@ -5,16 +5,40 @@ import { places } from "../data/discover.mjs";
 function showData(data) {
     data.places.forEach(place => {
         //create card and elements
-        const container = document.querySelector("#container");
+        const container = document.querySelector("#discover-container");
     let card = document.createElement('section');
     let title = document.createElement('h2');
-    let address = document.createElement('address');
-    let picture = document.createElement('figure');   
+        let address = document.createElement('address');
+        let figure = document.createElement('figure');   
+        let picture = document.createElement('img');  
+        let figcaption = document.createElement('figcaption');
         let description = document.createElement('p');
+        let button = document.createElement('button');
+        let infoContainer = document.createElement('div');
+        infoContainer.setAttribute('class', 'infoContainer');
         //populate tha card
         title.textContent = `${place.name}`;
         address.textContent = `${place.address}`;
+        infoContainer.appendChild(address);
+        infoContainer.appendChild(description);
+        
+        picture.setAttribute('src', place.image);
+        picture.setAttribute('alt', `Image of ${place.name}`);
+        picture.setAttribute('loading', 'lazy');
+        picture.setAttribute('width', 300);
+        picture.setAttribute('height', 200);
+        figcaption.textContent = `${place.name}`;
+        figure.appendChild(picture);
+        figure.appendChild(figcaption);
+        description.textContent = `${place.description}`;
+        button.textContent = "Learn More";
+        button.setAttribute('class', 'discoverBtn');
+
         card.appendChild(title);
+        card.appendChild(figure);
+        card.appendChild(infoContainer);
+        card.appendChild(button);
+        container.appendChild(card);
         console.log(place.name);
     });
     
@@ -48,8 +72,9 @@ imagesToLoad.forEach(image => {
 });
 
 //visits
-date_1 = new Date().toDateString();
-date_2 = new Date();
+
+const date_1 = new Date().toDateString();
+const date_2 = new Date();
 
 const days = (startDate, endDate) => {
     const difference = endDate.getTime() - startDate.getTime();
@@ -64,7 +89,15 @@ if (!lastvisit) {
     document.querySelector(".visits").innerHTML = "Welcome, this is your first visit";
 } else {
     const lastamount = days(new Date(lastvisit), new Date());
-    document.querySelector(".visits").innerHTML = "Welcome again, Last visited : " + lastamount + " days ago";
+    if (lastamount === 0) {
+        document.querySelector(".visits").innerHTML = "Welcome again, Last visited : Today";
+    }
+    else if (lastamount === 1) {
+        document.querySelector(".visits").innerHTML = "Welcome again, Last visited : " + lastamount + " day ago";
+    }
+    else{
+        document.querySelector(".visits").innerHTML = "Welcome again, Last visited : " + lastamount + " days ago";
+    }
     localStorage.setItem('last-visit', new Date());
 }
 
