@@ -33,11 +33,11 @@
         grid-template-columns: 1fr 1fr;
     } */ 
 
-    .join {
+    /* .join {
         grid-column: 1/4;
         grid-row: 4/5;
         display: block;
-    }
+    } */
 
     hr {
         display: none;
